@@ -1,0 +1,65 @@
+name: "❤️‍🔥 Leave Your Legacy"
+description: "Leave your message on the WeThinkCode_ Cohort of 2026 Legacy Wall."
+title: "[LEGACY] "
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🧱 WeThinkCode_ Cohort of 2026 — Legacy Wall
+
+        **365 days. One cohort. One journey. One legacy. ❤️‍🔥**
+
+        Leave something behind for the Cohort of 2026.
+
+        One day we will come back here and remember:
+
+        **We were here. We struggled. We grew. We made it together. 🫂**
+
+  - type: input
+    id: name
+    attributes:
+      label: "👤 Your Name"
+      description: "What name should appear on our Legacy Wall?"
+      placeholder: "e.g. Yanele"
+    validations:
+      required: true
+
+  - type: textarea
+    id: message
+    attributes:
+      label: "❤️ Your Message to Cohort 2026"
+      description: "Leave one message for the people who shared this journey with you."
+      placeholder: "Write your legacy message here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: memory
+    attributes:
+      label: "🫂 What will you remember most?"
+      description: "Tell us one thing you will always remember about our journey."
+      placeholder: "The friendships, debugging, late nights, laughs..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "💻 Current System Status"
+      options:
+        - "STILL RUNNING ❤️‍🔥"
+        - "DEBUGGING 😭"
+        - "SURVIVING 😂"
+        - "ALMOST THERE 🚀"
+        - "READY TO SHIP 🚀❤️‍🔥"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ubuntu
+    attributes:
+      label: "❤️ Ubuntu"
+      options:
+        - label: "I am because we are. 🫂"
+          required: true
